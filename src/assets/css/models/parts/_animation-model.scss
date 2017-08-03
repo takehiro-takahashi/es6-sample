@@ -1,0 +1,11 @@
+//--------------------------------------------------------
+// animation transition
+//--------------------------------------------------------
+@mixin transition($transition_prop: all) {
+  transition: $transition_prop $TRANSITION_TIME $TRANSITION_TYPE;
+}
+
+@mixin shadow-animation() {
+  @include transition();
+  box-shadow: $BOX_SHADOW;
+}

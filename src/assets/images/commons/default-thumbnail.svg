@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-200.000000, -200.000000)">
+            <g id="Group" transform="translate(200.000000, 200.000000)">
+                <rect id="Rectangle" fill="#CCCCCC" x="0" y="0" width="300" height="300"></rect>
+                <text id="NO-IMAGE" transform="translate(150.038280, 150.398144) rotate(-330.000000) translate(-150.038280, -150.398144) " font-family="Palatino-BoldItalic, Palatino" font-size="48" font-style="italic" font-weight="bold" letter-spacing="-0.0141176498" fill="#F4F7F7">
+                    <tspan x="18.935567" y="168.398144">NO IMAGE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

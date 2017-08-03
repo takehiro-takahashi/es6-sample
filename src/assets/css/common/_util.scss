@@ -1,0 +1,19 @@
+//--------------------------------------------------------
+// Clear Fix (下の3つからすきなものでよい) mixin版
+//--------------------------------------------------------
+@mixin clear-fix() {
+  .clear-fix:after {
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
+
+//--------------------------------------------------------
+// Clear Fixの代わりはdisplay: flow-root;
+// http://coliss.com/articles/build-websites/operation/css/the-end-of-the-clearfix.html
+//--------------------------------------------------------
+// まだFirefoxしか対応していない
+@mixin flow-root() {
+  display: flow-root;
+}

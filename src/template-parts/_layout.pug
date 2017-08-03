@@ -1,0 +1,16 @@
+block variables
+doctype html
+html(lang="ja")
+    head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
+        include /template-parts/header/_head
+    body(class=bodyClass)
+        // GAタグ
+        .wrapper
+            include /template-parts/header/_header
+            .container
+                main
+                    block content
+                include /template-parts/aside/_aside
+            include /template-parts/footer/_footer
+    block js
+        script(src="/assets/js/app.js")

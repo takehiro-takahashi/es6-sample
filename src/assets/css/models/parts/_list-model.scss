@@ -1,0 +1,18 @@
+//--------------------------------------------------------
+// テキストの頭に・や＊をつける
+//--------------------------------------------------------
+@mixin textBeforeQualification($text) {
+  display: block;
+  margin-left: 1.25em;
+  box-sizing: border-box;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    margin-left: -1.25em;
+    content: $text;
+    font-kerning: auto;
+    font-feature-settings: initial; // リストスタイルの時は、カーニングを初期値にする
+  }
+}

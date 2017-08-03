@@ -1,0 +1,5 @@
+@mixin image-size($width, $height) {
+  width: $width;
+  max-width: $width;
+  height: $height;
+}

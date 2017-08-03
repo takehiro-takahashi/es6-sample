@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------------------------
+//
+// Font French
+//
+//---------------------------------------------------------------------------------------------
+
+@mixin title-font-normal($size: $FONT_SIZE_MIDDLE) {
+  font: {
+    size: $size;
+    style: normal;
+  }
+}
+
+@mixin title-font-normal-bold($size: $FONT_SIZE_MIDDLE) {
+  font: {
+    size: $size;
+    style: normal;
+    weight: bold;
+  }
+}
+
+@mixin title-font-italic($size: $FONT_SIZE_MIDDLE) {
+  font: {
+    size: $size;
+    style: italic;
+  }
+}
+
+@mixin title-font-italic-bold($size: $FONT_SIZE_MIDDLE) {
+  font: {
+    size: $size;
+    weight: bold;
+    style: italic;
+  }
+}

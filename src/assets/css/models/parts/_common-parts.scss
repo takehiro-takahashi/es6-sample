@@ -1,0 +1,65 @@
+//--------------------------------------------------------
+// arrow
+// 0 -> right
+// 1 -> left
+//--------------------------------------------------------
+@mixin arrow-parts($direction: 0, $color: #ccc) {
+  &:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    //right: 15px;
+    width: 10px;
+    height: 10px;
+    margin-top: -7px;
+    border-top: 3px solid $color;
+    transform-origin: center center;
+    @if $direction == 0 {
+      // right
+      transform: rotate(45deg);
+      border-right: 3px solid $color;
+    }
+    @else if $direction == 1 {
+      // bottom
+      transform: rotate(135deg);
+      border-right: 3px solid $color;
+    }
+    @else if $direction == 2 {
+      // left
+      transform: rotate(225deg);
+      border-right: 3px solid $color;
+    }
+    @else if $direction == 3 {
+      // top
+      transform: rotate(315deg);
+      border-right: 3px solid $color;
+    }
+  }
+}
+
+%arrow-model {
+  position: absolute;
+  background: {
+    repeat: no-repeat;
+  }
+  content: '';
+}
+
+%arrow-white-model {
+  background-image: $IMAGE_ARROW_WHITE;
+}
+
+%arrow-gray-model {
+  background-image: $IMAGE_ARROW_GRAY;
+}
+
+%arrow-black-model {
+  background-image: $IMAGE_ARROW_BLACK;
+}
+
+%content-padding-model {
+  padding: {
+    left: $WIDTH_MULTIPLE_BASE * 10;
+    right: $WIDTH_MULTIPLE_BASE * 10;
+  }
+}

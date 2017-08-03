@@ -1,0 +1,36 @@
+@mixin button-model($width: 20%) {
+  display: block;
+  position: relative;
+  min-width: 200px;
+  width: $width;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition();
+  p {
+    font: {
+      family: $FONT_FAMILY_TITLE;
+      size: $FONT_SIZE_MIDDLE;
+      style: $FONT_STYLE_TITLE;
+    }
+  }
+  &:hover {
+    @include shadow-animation();
+  }
+  &.button__arrow-right {
+    @include arrow-parts(0, #ccc)
+  }
+  &.button__arrow-left {
+    @include arrow-parts(1, #ccc)
+  }
+}
+
+@mixin button-main-type-model() {
+  color: $COLOR_BUTTON_TEXT_MAIN;
+  background-color: $COLOR_BUTTON_BACKGROUND_MAIN;
+}
+
+@mixin button-accent-type-model() {
+  color: $COLOR_BUTTON_TEXT_ACCENT;
+  background-color: $COLOR_BUTTON_BACKGROUND_ACCENT;
+}

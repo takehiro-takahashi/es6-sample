@@ -1,0 +1,15 @@
+extends template-parts/_layout
+append variables
+    - var pageTitle = "テンプレート1"
+    - var pageDescription = "テンプレートv1です。"
+    - var bodyClass = "layout-package template-v1-page"
+
+block content
+    .slider-component
+    .content-inner
+        h2 templatev1
+        section.youtube-component
+            h3.title Youtubeレスポンシブコンポーネント
+            .video
+                .youtube-wrapper
+                    iframe(src="https://www.youtube.com/embed/_RRbVhobb9o?rel=0" frameborder="0" allowfullscreen)

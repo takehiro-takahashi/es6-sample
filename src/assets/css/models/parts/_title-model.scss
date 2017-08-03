@@ -1,0 +1,32 @@
+@mixin title-h1() {
+  font: {
+    size: $FONT_SIZE_XXX-LARGE;
+    family: YuGothic;
+  }
+}
+
+@mixin title-h2() {
+  font: {
+    size: $FONT_SIZE_XX-LARGE;
+    family: YuGothic;
+  }
+}
+
+@mixin title-h3() {
+  font: {
+    size: $FONT_SIZE_X-LARGE;
+    family: YuGothic;
+  }
+}
+
+@mixin title-h4() {
+  //
+}
+
+@mixin title-h5() {
+  //
+}
+
+@mixin title-h6() {
+  //
+}

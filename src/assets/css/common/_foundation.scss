@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------------------------
+//
+// サイト全体共通スタイル
+//
+//---------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------
+// import
+//--------------------------------------------------------
+@import "ress.min";   // リセットCSS
+@import "debug";      // Debugするときに使用
+@import "theme";      // サイト独自の変数定義
+@import "responsive"; // レスポンシブの設定
+@import "util";       // ユーティリティファイル
+
+//--------------------------------------------------------
+// base
+//--------------------------------------------------------
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: $FONT_FAMILY_DEFAULT;
+}
+body {
+  background-color: $COLOR_BRAND_MAIN;
+  font: {
+    family: $FONT_FAMILY_DEFAULT;
+  }
+  color: $FONT_COLOR_MAIN;
+  line-height: $LINE_HEIGHT;
+  @if $FONT_FEATURE_SETTINGS {
+    font-feature-settings: 'palt' 1, 'trad' 1;
+  }
+  //white-space: pre-wrap;// 改行やスペースが、そのまま反映される。
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+}
+ul,
+ol {
+  @if $LIST_STYLE_TYPE_CANCEL {
+    list-style-type: none;
+  }
+}
+
+hr {
+  @if $HR_NOT_DEFAULT {
+    border: none;
+    border-top: 1px solid $COLOR_BORDER;
+  }
+}
+

@@ -1,0 +1,55 @@
+@mixin wrapper-model() {
+  // テキストハイライト設定
+  ::selection {
+    background-color: #616161;
+    color: #fff;
+  }
+  //---------------------------------------------------------------------------------------------
+  //
+  // common parts
+  //
+  //---------------------------------------------------------------------------------------------
+  //--------------------------------------------------------
+  // text
+  //--------------------------------------------------------
+
+  p {
+    @include word-break-model();
+    font-size: $FONT_SIZE_DEFAULT;
+  }
+
+  small {
+    @include word-break-model();
+    font-size: $FONT_SIZE_X_SMALL;
+  }
+
+  //--------------------------------------------------------
+  // before qualification
+  //--------------------------------------------------------
+  .text-asterisk {
+    @include textBeforeQualification('＊');
+  }
+  .text-attention {
+    @include textBeforeQualification('※');
+  }
+  .text-dot {
+    @include textBeforeQualification('・');
+  }
+
+  //---------------------------------------------------------------------------------------------
+  //
+  // common style
+  //
+  //---------------------------------------------------------------------------------------------
+  > .header-component {
+    @include header-component-model();
+  }
+  > .container {
+    > main {
+      //
+    }
+  }
+  > .footer-component {
+    @include footer-component-model();
+  }
+}

@@ -1,0 +1,9 @@
+@mixin wrapper-model() {
+  //
+}
+
+@mixin content-inner-model() {
+  h2 {
+    @include title-h2();
+  }
+}

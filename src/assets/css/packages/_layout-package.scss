@@ -1,0 +1,11 @@
+//--------------------------------------------------------
+// import
+//--------------------------------------------------------
+@import "../common/foundation";
+@import "../models/foundation";
+
+.layout-package {
+  .wrapper {
+    @include wrapper-model();
+  }
+}

@@ -1,0 +1,50 @@
+append variables
+    - var siteTitle = "テンプレート"
+//- meta
+meta(charset="utf-8")
+meta(content="IE=edge", http-equiv="X-UA-Compatible")
+meta(content="ID", property="fb:pages")
+meta(content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", name="viewport")
+meta(content="authenticity_token", name="csrf-param")
+meta(content="", name="csrf-token")
+meta(content=pageDescription, name="description")
+meta(content="Takehiro Takahashi", name="author")
+meta(content="", name="google-site-verification")
+meta(content="format-detection", name="address=no,email=no,telephone=no")
+
+//- OGP
+if pageTitle
+    meta(property="og:title", content=pageTitle + ' | ' + siteTitle)
+else
+    meta(property="og:title", content=siteTitle)
+meta(property="og:type", content="ページの種類")
+meta(property="og:url", content="ページのURL")
+meta(property="og:image", content="サムネイル画像のURL")
+meta(property="og:site_name", content="サイト名")
+meta(property="og:description", content="ページのディスクリプション")
+
+//Facebook共通設定
+meta(property="fb:app_id", content="App-ID（15文字の半角数字)")
+
+//- Twitter共通設定
+meta(content="Twitterカードの種類", name="twitter:card")
+meta(content="@", name="twitter:site")
+meta(content="", property="twitter:title")
+meta(content="", property="twitter:description")
+meta(content="", property="twitter:image:src")
+
+//- image
+link(href="", rel="canonical")
+link(href="", rel="shortcut icon" type="image/vnd.microsoft.icon")
+link(href="", rel="apple-touch-icon" type="image/png")
+
+link(href="", rel="amphtml")
+
+if pageTitle
+    title #{pageTitle} | #{siteTitle}
+else
+    title #{siteTitle}
+
+//- stylesheet
+block css
+    link(href="/assets/css/style.css", rel="stylesheet")

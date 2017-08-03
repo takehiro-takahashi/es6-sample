@@ -1,0 +1,144 @@
+//---------------------------------------------------------------------------------------------
+//
+// Width
+//
+//---------------------------------------------------------------------------------------------
+$WIDTH_MULTIPLE_BASE: 4px !default; // この数値を基準に、マージンやパディング、幅を調整。padding: $widthDefault * 4; <- 16px
+$WIDTH_PC_CONTENT_SPACE: $WIDTH_MULTIPLE_BASE * 5 !default;
+$WIDTH_PC: 1200px !default; //
+$WIDTH_PC_CONTENT: $WIDTH_PC - $WIDTH_PC_CONTENT_SPACE !default;
+$WIDTH_MIN: 320px;
+$WIDTH_MAX: 1800px;
+
+//---------------------------------------------------------------------------------------------
+//
+// Height
+//
+//---------------------------------------------------------------------------------------------
+$LINE_HEIGHT: 1.4;
+
+//---------------------------------------------------------------------------------------------
+//
+// Font
+//
+//---------------------------------------------------------------------------------------------
+@font-face {
+  font-family: "palatino";
+  font-weight: normal;
+  src: local("/fonts/texgyrepagella-regular.otf");
+}
+@font-face {
+  font-family: "Meiryo";
+  src: local("/fonts/meiryo.ttc");
+}
+
+$FONT_FAMILY_DEFAULT: "Meiryo", "Hiragino Kaku Gothic Pro","sans-serif";
+//$FONT_FAMILY_DEFAULT: 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Verdana, 'ＭＳ Ｐゴシック', sans-serif;
+$FONT_FAMILY_TITLE: 'palatino', sans-serif !default;
+$FONT_FEATURE_SETTINGS: true !default; // カーニング(文字幅の調整)
+
+$FONT_STYLE_TITLE: italic;
+
+$FONT_COLOR_MAIN: #2E2E2E !default;
+$FONT_COLOR_ALERT: #EE3319 !default;
+//$COLOR_FONT_ANNOTATION: #797D7F !default;
+$FONT_COLOR_ANNOTATION: #A6ACAF !default;
+
+$FONT_SIZE_DEFAULT: 14px !default;
+$FONT_SIZE_X-SMALL: 62.5%;
+$FONT_SIZE_SMALL: 0.8rem;
+$FONT_SIZE_MIDDLE: 1.2rem;
+$FONT_SIZE_LARGE: 1.6rem;
+$FONT_SIZE_X-LARGE: 1.8rem;
+$FONT_SIZE_XX-LARGE: 2.4rem;
+$FONT_SIZE_XXX-LARGE: 2.8rem;
+$FONT_SIZE_XXXX-LARGE: 3.2rem;
+$FONT_SIZE_7: 0.7rem;
+$FONT_SIZE_8: 0.8rem;
+$FONT_SIZE_9: 0.9rem;
+$FONT_SIZE_10: 1.0rem;
+$FONT_SIZE_11: 1.1rem;
+$FONT_SIZE_12: 1.2rem;
+$FONT_SIZE_14: 1.4rem;
+$FONT_SIZE_16: 1.6rem;
+$FONT_SIZE_18: 1.8rem;
+$FONT_SIZE_20: 2.0rem;
+$FONT_SIZE_22: 2.2rem;
+$FONT_SIZE_24: 2.4rem;
+$FONT_SIZE_26: 2.6rem;
+$FONT_SIZE_28: 2.8rem;
+$FONT_SIZE_30: 3.0rem;
+$FONT_SIZE_32: 3.2rem;
+$FONT_SIZE_34: 3.4rem;
+
+//---------------------------------------------------------------------------------------------
+//
+// Color
+//
+//---------------------------------------------------------------------------------------------
+$COLOR_PRIMARY: #54B3EE !default;
+$COLOR_WARNING: #EE3319 !default;
+
+$COLOR_BRAND_MAIN: #fff !default;
+$COLOR_BRAND_ACCENT: #42ABA0 !default;
+$COLOR_BRAND_SUPPORT: #fff !default;
+$COLOR_BRAND_ATTENTION: #63C1D8 !default;
+
+$COLOR_BORDER: #E6EAEB !default;
+
+$COLOR_LINK_MAIN: #42ABA0 !default;
+$COLOR_LINK_VISITED: #2E2E2E !default;
+$COLOR_LINK_HOVER: #fff !default;
+
+$COLOR_BUTTON_BACKGROUND_MAIN: #fff !default;
+$COLOR_BUTTON_BACKGROUND_ACCENT: #fff !default;
+$COLOR_BUTTON_BACKGROUND_SUPPORT: #fff !default;
+$COLOR_BUTTON_TEXT_MAIN: #ccc !default;
+$COLOR_BUTTON_TEXT_ACCENT: #ccc !default;
+$COLOR_BUTTON_TEXT_SUPPORT: #ccc !default;
+
+$COLOR_FORM: #797D7F !default;
+$COLOR_FORM_BORDER: $COLOR_BORDER !default;
+$COLOR_FORM_TEXT: $FONT_COLOR_ANNOTATION !default;
+$COLOR_FORM_TEXT_PLACEHOLDER: $COLOR_BORDER !default;
+$COLOR_FORM_TEXT_DANGER: $FONT_COLOR_ALERT !default;
+$COLOR_FORM_BORDER_DANGER: lighten($FONT_COLOR_ALERT, 50%) !default;
+$COLOR_FORM_BACKGROUND: #fff !default;
+$COLOR_FORM_BACKGROUND_EDIT: #fff !default;
+$COLOR_FORM_CHECKED: $COLOR_LINK_MAIN !default;
+
+//---------------------------------------------------------------------------------------------
+//
+// animation
+//
+//---------------------------------------------------------------------------------------------
+$TRANSITION_TIME: .3s;
+$TRANSITION_TYPE: ease-out;
+
+//---------------------------------------------------------------------------------------------
+//
+// UI
+//
+//---------------------------------------------------------------------------------------------
+$UI_RADIUS: 4px !default;
+$BOX_SHADOW: 0 2px 4px rgba(0,0,0,.1);
+//$PAGE_TITLE: url(../../images/commons/header/logo.svg) no-repeat center center;
+
+//---------------------------------------------------------------------------------------------
+//
+// images
+//
+//---------------------------------------------------------------------------------------------
+$IMAGE_PAGE_TOP: url(./assets/images/commons/footer/page-top-gray.svg);
+$IMAGE_ARROW_GRAY: url(./assets/images/commons/arrow-gray.svg);
+$IMAGE_ARROW_WHITE: url(./assets/images/commons/arrow-white.svg);
+$IMAGE_ARROW_BLACK: url(./assets/images/commons/arrow-black.svg);
+$IMAGE_HEADER_MENU_ICONO: url(./assets/images/commons/header/menu-icon.svg);
+$IMAGE_HEADER_CONTACT: url(./assets/images/commons/header/contact.svg);
+
+//--------------------------------------------------------
+// Other Setting
+//--------------------------------------------------------
+$IE_SUPPORT: true !default; // clear fixでzoomを私用するかしないか。common/_util.scss
+$LIST_STYLE_TYPE_CANCEL: true !default; // trueなら、list-style-typeはnoneになる。
+$HR_NOT_DEFAULT: true !default; // hrタグがデフォルトだと立体感のあるものになっているので、それをリセットするかどうか

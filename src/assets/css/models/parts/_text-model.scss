@@ -1,0 +1,14 @@
+//--------------------------------------------------------
+// 折り返し設定
+//--------------------------------------------------------
+@mixin word-break-model() {
+  word-break: break-all;
+  word-wrap: normal;
+}
+
+@mixin one-line-clamp() {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
